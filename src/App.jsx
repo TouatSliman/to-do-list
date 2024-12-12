@@ -18,8 +18,8 @@ function App() {
   return (
     <>
       <h1 className='text-4xl font-bold text-blue-500 md:text-6xl xl:text-8xl md:mt-6 xl:mt-8 md:mb-6 xl:mb-8 text-center  text-center mt-4'>To-Do List</h1>
-      <div className='flex gap-2 mt-4 items-center justify-center p-2'>
-        <input type="text" placeholder='Add item' id='text' className='p-2 border border-gray-300 rounded border-2 outline-none' />
+      <div className='fixed w-full bottom-0 mt-4 r p-2 flex items-center justify-center gap-4 md:relative'>
+        <input type="text" placeholder='Add item' id='text' className='p-2 border border-gray-300 w-[80%] rounded border-2 outline-none' />
         <button onClick={addItem} className='p-2 border border-gray-300 rounded border-2 focus:ring-2 focus:ring-blue-500 bg-blue-500 text-white hover:bg-blue-600 '>Add</button>
       </div>
       <ul className='mt-4 grid grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 p-2'>
